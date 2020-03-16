@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Caveat|Cinzel&display=swap');
+
+* {
+    font-family: 'Cinzel', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+    text-align: center;
+    margin-top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p{
+    font-size: 1.4rem;
+    font-family: 'Caveat', cursive;
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    align-items: center;
+}
+
+input{
+    margin: 2%;
+    font-size: 1.3rem;
+    padding: 5px;
+    width: 700px;
+    text-align: center;
+}
+
+button{
+    font-size: 1.3rem;
+    padding: 5px;
+    width: 700px;
+    
+}
+
+.taskContainer{
+    height: 500px;
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-evenly;
+    background-color: lightgray;
+}
+
+.toDoContainer{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: baseline;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.red-text {
+  color: darkred;
 }
