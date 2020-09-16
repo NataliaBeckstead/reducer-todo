@@ -1,4 +1,5 @@
 import React from 'react';
+// moment library used for rendering time of todo submission
 import * as moment from "moment";
 
 let Todo = props => {
